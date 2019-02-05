@@ -21,5 +21,10 @@ describe('Fizzbuzz', function() {
     });
 
   });
+  describe('when divisible by 3', function() {
+    it('returns Fizz', function() {
+      expect(fizzbuzz.say(3)).toEqual('Fizz');
+    });
+  });
   
 });
