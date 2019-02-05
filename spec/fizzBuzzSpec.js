@@ -26,5 +26,15 @@ describe('Fizzbuzz', function() {
       expect(fizzbuzz.say(3)).toEqual('Fizz');
     });
   });
-  
+  describe('when divisible by 5', function() {
+    it('returns Buzz', function() {
+      expect(fizzbuzz.say(5)).toEqual('Buzz');
+    });
+  });
+  describe('when divisible by 15', function() {
+    it('returns FizzBuzz', function() {
+      expect(fizzbuzz.say(15)).toEqual('FizzBuzz');
+    });
+  });
+
 });
